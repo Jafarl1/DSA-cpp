@@ -24,6 +24,7 @@ public:
     head = nullptr;
     tail = nullptr;
     size = 0;
+    std::cout << "The queue is constructed." << std::endl;
   };
 
   ~Queue() {
@@ -32,6 +33,7 @@ public:
       head = head->next;
       delete temp;
     }
+    std::cout << "The queue is destructed." << std::endl;
   }
 
   Queue &enqueue(int value) {

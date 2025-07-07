@@ -22,6 +22,7 @@ public:
   LinkedList() {
     head = nullptr;
     size = 0;
+    std::cout << "The list is constructed." << std::endl;
   }
 
   ~LinkedList() {
@@ -30,6 +31,7 @@ public:
       delete head;
       head = next;
     }
+    std::cout << "The list is destructed." << std::endl;
   }
 
   LinkedList &push_front(int value) {
